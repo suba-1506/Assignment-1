@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class CmToM
+{
+    public static void main(String[] args) 
+{
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter length in centimeters (cm): ");
+        double cm = scanner.nextDouble();
+        double meters = cm / 100;
+        System.out.println(cm + " cm = " + meters + " m");
+    }
+}
+ 
