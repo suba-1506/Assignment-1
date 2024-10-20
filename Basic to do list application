@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class List
+{
+    public static void main(String args[])
+{
+        Scanner scanner = new Scanner(System.in);
+        String[] tasks = new String[10];
+        int taskCount = 0;
+        while (true) {
+            System.out.println("\nTo-Do List");
+            System.out.println("1. Add Task");
+            System.out.println("2. View Tasks");
+            System.out.println("3. Exit");
+            System.out.print("Choose an option: ");
+            int option = scanner.nextInt();
+            scanner.nextLine(); 
+            switch (option) 
+{
+          case 1:
+                System.out.print("Enter task: ");
+                tasks[taskCount] = scanner.nextLine();
+                taskCount++;
+                break;
+          case 2:
+               System.out.println("\nTasks:");
+                for (int i = 0; i < taskCount; i++)
+                {
+                        System.out.println((i + 1) + ". " + tasks[i]);
+                 }
+                  break;
+           case 3:
+                System.out.println("Goodbye!");
+                return;
+            }
+        }
+    }
+}
