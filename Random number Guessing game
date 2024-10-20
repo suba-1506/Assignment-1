@@ -35,4 +35,4 @@ class RN {
     public static void main(String arg[])
     {
         guessingNumberGame();
-    }
+    }}
