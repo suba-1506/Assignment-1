@@ -1,0 +1,10 @@
+import java.io.*;
+class SI
+{
+public static void main (String arg[]) 
+{
+float P=1, R=1, T=1;
+float SI=(P*T*R)/100;
+System.out.println("Simple Interest: "+ SI);
+}
+}
