@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class Quiz 
+{
+    public static void main(String args[]) 
+{
+        Scanner scanner = new Scanner(System.in);
+        int score = 0;
+        System.out.println("Quiz Time!");
+        System.out.println("Question 1: What is the capital of France?");
+        System.out.println("A) Berlin");
+        System.out.println("B) Paris");
+        System.out.println("C) London");
+        System.out.print("Enter your answer (A/B/C): ");
+        String answer1 = scanner.next();
+        if (answer1.equalsIgnoreCase("B")) 
+{
+        score++;
+        System.out.println("Correct!");
+        } 
+else
+{
+            System.out.println("Incorrect. The correct answer was Paris.");
+        }
+        System.out.println("Question 2: Who is the CEO of Tesla?");
+        System.out.println("A) Elon Musk");
+        System.out.println("B) Jeff Bezos");
+        System.out.println("C) Bill Gates");
+        System.out.print("Enter your answer (A/B/C): ");
+        String answer2 = scanner.next();
+ if (answer2.equalsIgnoreCase("A"))
+{
+   score++;
+  System.out.println("Correct!");
+  }
+else 
+{
+System.out.println("Incorrect. The correct answer was Elon Musk.");
+ }
+ System.out.println("Quiz finished. Your score is " + score + "/2");
+}}
